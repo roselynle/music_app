@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Artists from './components/Artists';
 import Songs from './components/Songs';
 
