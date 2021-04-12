@@ -1,13 +1,13 @@
 import React from 'react';
-// import TrainerCard from './components/TrainerCard';
-// import PokemonCards from './components/PokemonCards';
+import Artists from './components/Artists';
+import Songs from './components/Songs';
 
 function App() {
   return (
     <main>
       <h1>Our music app</h1>
-      <TrainerCard />
-      <PokemonCards />
+      <Artists />
+      <Songs />
     </main>
   );
 }
