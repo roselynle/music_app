@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Artists from './components/Artists';
-import Songs from './components/Songs';
+import AlbumCards from './components/AlbumCards';
 
 function App() {
   return (
     <main>
       <h1>Our music app</h1>
       <Artists />
-      <Songs />
+      <AlbumCards />
     </main>
   );
 }
