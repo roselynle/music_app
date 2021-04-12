@@ -4,7 +4,7 @@
 
 import React, { useState } from 'react';
 
-const Albums = () => {
+const AlbumCards = () => {
     const [album, setAlbum] = useState([
         { name: 'Scorpion', release_date: '2018', cover: "https://upload.wikimedia.org/wikipedia/en/9/90/Scorpion_by_Drake.jpg"}
     ])
@@ -28,4 +28,4 @@ const Albums = () => {
     );
 };
 
-export default Albums
+export default AlbumCards
