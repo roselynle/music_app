@@ -1,6 +1,7 @@
 import React from 'react';
 import Artists from './components/Artists';
 import AlbumCards from './components/AlbumCards';
+import LikeButton from './components/LikeButton';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <h1>Our music app</h1>
       <Artists />
       <AlbumCards />
+      <LikeButton />
     </main>
   );
 }
