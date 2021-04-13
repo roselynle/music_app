@@ -13,15 +13,16 @@ const Greeting = () => {
     };
 
     return (
-        <>
-        <h3 aria-label="greeting" id="greeting">Hi there, {username ? username : 'Drake Lovers'}!</h3>
+        <div id="greeting-container">
+        <h3 aria-label="greeting" id="greeting">Whats' poppin, {username ? username : 'Drake Fans'}!</h3>
 
         <form onSubmit={handleFormSubmit}>
           <label htmlFor="username">Name</label>
           <input type="text" id="username" name="username" placeholder="Enter your name" value={nameInput} onChange={handleInput}/>
           <input type="submit" value="Update!"/>
         </form>
-        </>
+        <img id="drake-gif" src="https://media3.giphy.com/media/4agObsH4umYkIwlYZx/giphy.gif" alt="Drake GIF"/>
+        </div>
     )
 
 }

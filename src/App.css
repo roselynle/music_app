@@ -1,10 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Staatliches&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: white;
+    width: 90%;
+    background-image: linear-gradient(#18191a, #b0b8bf);
+    background-size: 100% 100%;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+#heading {
+  padding: 20px 0px;
+  font-family: 'Staatliches', cursive;
+  font-size: 5rem;
+  color: #ffffff;
+}
+
+#genre {
+  padding: 15px 0px;
 }
 
 .bio {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  width: 100vw;
+  width: 750px;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 .albumImg {
@@ -13,7 +40,48 @@ body {
 
 .card {
   border: 1px solid black;
-  background-color: rgb(207, 207, 207);
+  background-color: #ebebeb;
   border-radius: 5px;
   width: 21rem;
+  color: black;
+  text-align: center;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 44px;
+}
+
+.row {
+  display:inline-block;
+
+}
+
+#greeting-container {
+   display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 40px 40px;
+    background-color: rgba(255,255,255, 0.35);
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+#greeting-container > h3 {
+  padding-bottom: 10px;
+}
+
+i {
+  padding-top: 20px;
+}
+
+input {
+  padding: 6px;
+  margin: 3px;
+}
+
+#drake-gif {
+  margin: 20px 0px;
+  width: 15rem;
+  align-self: center;
 }

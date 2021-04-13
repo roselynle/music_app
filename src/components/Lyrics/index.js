@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import axios from "axios";
 
-const Api = ({close}) => {
+const Lyrics = ({close}) => {
     const [api, setApi] = React.useState();
     useEffect(() => {
         async function getLyrics() {
@@ -36,4 +36,4 @@ const Api = ({close}) => {
     )
 }
 
-export default Api;
+export default Lyrics;
