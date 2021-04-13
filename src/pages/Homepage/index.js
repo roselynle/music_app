@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Greeting, ArtistBio, AlbumCards } from "../../components";
+import { Greeting, ArtistBio, AlbumCards, FetchAPI } from "../../components";
 
 const Homepage = () => {
     const [album, setAlbum] = useState([
@@ -31,7 +31,7 @@ const Homepage = () => {
             <ArtistBio />
             <Greeting />
             <AlbumCards album={album} />
- 
+            <FetchAPI />
         </main>
     );
 };
