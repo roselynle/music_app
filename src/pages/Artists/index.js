@@ -2,7 +2,7 @@
 //type of music
 //intro p
 import React, { useState } from 'react';
-import { Greeting, AlbumCards} from '../../components';
+import { Greeting, Headlines, AlbumCards} from '../../components';
 
     const Artists = () => {
 
@@ -31,9 +31,9 @@ import { Greeting, AlbumCards} from '../../components';
                     </aside>
 
                     <section>
-                       <AlbumCards name={name} release_date={release_date}/>
+                       <Headlines name={name} release_date={release_date}/>
 
-                       { chosenArtist && <FeaturedAlbum artist={chosenArtist} />}
+                       { chosenArtist && <AlbumCards artist={chosenArtist} />}
                     </section>
                     <Artists  />
         
