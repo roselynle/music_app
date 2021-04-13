@@ -9,7 +9,9 @@ const LikeButton = () => {
     };
 
     return (
-        <button role="switch" onClick={handleLike} style={{ color: liked ? 'green' : 'red' }}>LIKE</button>
+            <span className="like-btn" role="switch" onClick={handleLike} style={{ fontSize: '2rem'}}>
+            <i className={`${liked ? 'far': 'fas'} fa-thumbs-up`}></i>
+        </span>
     );
 };
 
