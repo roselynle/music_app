@@ -1,18 +1,17 @@
-import React, { Component } from 'react';
+import React from "react";
+import { Header , Footer } from "./layout";
 
-import Artists from './components/Artists';
-import AlbumCards from './components/AlbumCards';
-import LikeButton from './components/LikeButton';
+import { Homepage } from "./pages";
+import './App.css';
 
 function App() {
-  return (
-    <main>
-      <h1>Our music app</h1>
-      <Artists />
-      <AlbumCards />
-      <LikeButton />
-    </main>
-  );
+    return (
+        <>
+            <Header />
+            <Homepage />
+            <Footer />
+        </>
+    );
 }
 
 export default App;
