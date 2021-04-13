@@ -21,6 +21,7 @@ const Greeting = () => {
           <input type="text" id="username" name="username" placeholder="Enter your name" value={nameInput} onChange={handleInput}/>
           <input type="submit" value="Update!"/>
         </form>
+        <img id="drake-gif" src="https://media3.giphy.com/media/4agObsH4umYkIwlYZx/giphy.gif" alt="Drake GIF"/>
         </div>
     )
 

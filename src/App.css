@@ -43,32 +43,24 @@ body {
   background-color: #ebebeb;
   border-radius: 5px;
   width: 21rem;
-  margin: 20px;
   color: black;
   text-align: center;
   padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 44px;
 }
 
-.column {
-  float: center;
-  width: 35%;
-  padding: 0 10px;
-}
+.row {
+  display:inline-block;
 
-
-.row {margin: 0 -5px;}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 #greeting-container {
    display: flex;
     text-align: center;
     flex-direction: column;
-    padding: 40px 10px;
+    padding: 40px 40px;
     background-color: rgba(255,255,255, 0.35);
     width: 300px;
     margin: 0 auto;
@@ -81,4 +73,15 @@ body {
 
 i {
   padding-top: 20px;
+}
+
+input {
+  padding: 6px;
+  margin: 3px;
+}
+
+#drake-gif {
+  margin: 20px 0px;
+  width: 15rem;
+  align-self: center;
 }
