@@ -1,18 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const Lyrics = ({close}) => {
-    const [api, setApi] = React.useState();
+const Lyrics = ({title}) => {
+    const [lyrics, setLyrics] = useState(false);
     useEffect(() => {
         async function getLyrics() {
             try {
+                console.log(title)
                 let { data } = await axios.get(
-                    "https://api.lyrics.ovh/v1/drake/one_dance"
+                    `https://api.lyrics.ovh/v1/drake/${title}`
                 );
-                setApi(data);
+                setLyrics(data);
             } catch (err) {
                 console.warn(err);
-                setApi({
+                setLyrics({
                     lyrics: "Sorry no lyrics found",
                 });
             }
@@ -26,10 +27,9 @@ const Lyrics = ({close}) => {
 
     return (
       <>
-        { api ?
+        { lyrics ?
             <>
-            <p><b>Lyrics to One Dance</b></p>
-            <p>{api.lyrics}</p>
+            <p>{lyrics.lyrics}</p>
             </>
         : <h2>Lyrics are on their way!</h2> }
         </>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { LikeButton } from "../";
+import { Lyrics } from "../"
 
 const AlbumCards = ({ album }) => {
     const renderAlbumCards = () => {
@@ -12,8 +13,10 @@ const AlbumCards = ({ album }) => {
                     <p className="card-text">Release date: {a.release_date}</p>
                     <p className="card-text">Our top pick song: {a.featured_song}</p>
                     <a href={a.url} target="blank" className="card-link">Listen here</a>
-                    <p></p>
+                    <p>{a.featured_song}</p>
                     <LikeButton/>
+                    <Lyrics title={a.lyrics}/>
+                    <p></p>
                     </div>
                 </div>
             </div>
