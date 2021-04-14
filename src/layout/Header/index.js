@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import { BackButton } from '../../components';
 import './style.css';
 
 const Header = () => {
@@ -9,6 +10,7 @@ const Header = () => {
             <NavLink exact to="/" activeClassName="current">Homepage</NavLink>
             <NavLink exact to="/about" activeClassName="current">About</NavLink>
             <NavLink exact to="/lyrics" activeClassName="current">Lyrics</NavLink>
+            <BackButton />
          </nav>
           
     );

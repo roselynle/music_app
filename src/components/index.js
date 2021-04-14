@@ -3,3 +3,4 @@ export { default as Greeting } from './Greeting';
 export { default as ArtistBio } from './ArtistBio';
 export { default as LikeButton } from './LikeButton';
 export { default as Lyrics } from './Lyrics';
+export { default as BackButton } from './BackButton';
