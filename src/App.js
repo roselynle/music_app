@@ -14,6 +14,7 @@ function App() {
            <Route exact path="/" component={Pages.Homepage} />
            <Route path="/about" component={Pages.About} />
            <Route path="/lyrics" component={Pages.LyricsPage} />
+           <Route path="/albums" component={Pages.Albums} />
            <Route component={Pages.NotFound} />
         </Switch>
         <Footer />

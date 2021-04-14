@@ -10,6 +10,7 @@ const Header = () => {
             <NavLink exact to="/" activeClassName="current">Homepage</NavLink>
             <NavLink exact to="/about" activeClassName="current">About</NavLink>
             <NavLink exact to="/lyrics" activeClassName="current">Lyrics</NavLink>
+            <NavLink exact to="/albums" activeClassName="current">Albums</NavLink>
             <BackButton />
          </nav>
           
