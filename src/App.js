@@ -13,7 +13,7 @@ function App() {
         <Switch>
            <Route exact path="/" component={Pages.Homepage} />
            <Route path="/about" component={Pages.About} />
-           <Route path="/lyrics" component={Pages.Lyrics} />
+           <Route path="/lyrics" component={Pages.LyricsPage} />
            <Route component={Pages.NotFound} />
         </Switch>
         <Footer />

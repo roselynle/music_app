@@ -6,6 +6,5 @@
   display: flex;
   justify-content: space-around;
   color: black;
-  position: fixed;
   font-size: 0.9rem;
 }

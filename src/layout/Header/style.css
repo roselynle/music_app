@@ -8,6 +8,7 @@ nav {
   justify-content: space-around;
   color: white;
   position: fixed;
+  top:0;
 }
 
 a {

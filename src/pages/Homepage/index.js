@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Greeting, ArtistBio, AlbumCards, Lyrics } from "../../components";
+import { Greeting, ArtistBio, AlbumCards} from "../../components";
 
 const Homepage = () => {
     const [album, setAlbum] = useState([
@@ -36,7 +36,7 @@ const Homepage = () => {
     ]);
 
     return (
-        <main aria-label="main" className="container">
+        <main aria-label="main" className="homepage-container">
             <ArtistBio />
             <Greeting />
             <AlbumCards album={album} />
