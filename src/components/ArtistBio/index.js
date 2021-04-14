@@ -4,8 +4,8 @@ function ArtistBio() {
     return (
         <>
             <div className="bio">
-            <h1 id="heading">Drake Appreciation Club</h1>
-                <h2 id="genre">Hip Hop Artist</h2>
+            <h1 id="heading">Team Drizzy</h1>
+            <h1 id="tagline">Drake Appreciation Club</h1>
                 <p role="bio">
                     Aubrey Drake Graham is a Canadian rapper, singer,
                     songwriter, actor, and entrepreneur. A prominent figure in

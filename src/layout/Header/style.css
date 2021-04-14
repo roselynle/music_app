@@ -1,6 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand&display=swap');
 
 nav {
-
+  width: 100vw;
+  background-color: #ebebeb;
+  padding: 16px 0px;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  position: fixed;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.current {
+  color: black;
+  font-weight: bolder;
+}

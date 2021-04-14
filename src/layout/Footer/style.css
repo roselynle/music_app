@@ -1,5 +1,11 @@
 #footer {
   bottom: 0;
-  background-color: grey;
-  padding: 20px;
+  width: 100vw;
+  background-color: #ebebeb;
+  padding: 11px 0px;
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  position: fixed;
+  font-size: 0.9rem;
 }
