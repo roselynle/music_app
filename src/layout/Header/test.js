@@ -1,13 +1,10 @@
-import { screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import Header from '.';
 
 describe('Header', () => {
-    
-    beforeEach(() => {
-        render(<Header />);
-    })
-
     test('it renders a nav tag', () => {
+        render(<Header />, { wrapper: MemoryRouter });
         const nav = screen.queryByRole('navigation');
         expect(nav).toBeInTheDocument();
     })

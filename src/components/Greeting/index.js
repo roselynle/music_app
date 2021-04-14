@@ -14,7 +14,7 @@ const Greeting = () => {
 
     return (
         <div id="greeting-container">
-        <h3 aria-label="greeting" id="greeting">Whats' poppin, {username ? username : 'Drake Fans'}!</h3>
+        <h3 role="heading" aria-label="greeting" id="greeting">Whats' poppin, {username ? username : 'Drake Fans'}!</h3>
 
         <form onSubmit={handleFormSubmit}>
           <label htmlFor="username">Name</label>
