@@ -1,13 +1,18 @@
-import React from "react";
+import React from 'react';
 
-import { Homepage } from "./pages";
+import { Homepage, About, Lyrics } from './pages';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
 function App() {
     return (
-        <div>
-            <Homepage />
-        </div>
+     <>
+        <Switch>
+           <Route exact path="/" component={Homepage} />
+           <Route path="/about" component={About} />
+           <Route path="/lyrics" component={Lyrics} />
+        </Switch>
+     </>
     );
 }
 
