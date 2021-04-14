@@ -6,7 +6,6 @@ const Lyrics = ({title}) => {
     useEffect(() => {
         async function getLyrics() {
             try {
-                console.log(title)
                 let { data } = await axios.get(
                     `https://api.lyrics.ovh/v1/drake/${title}`
                 );

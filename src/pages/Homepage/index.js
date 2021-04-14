@@ -40,7 +40,6 @@ const Homepage = () => {
             <ArtistBio />
             <Greeting />
             <AlbumCards album={album} />
-            <Lyrics />
         </main>
     );
 };
