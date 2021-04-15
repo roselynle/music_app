@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
     return (
         <main aria-label="main" className="about-container">
-            <h1 className="pages-heading">About Drake</h1>
+            <h1 className="pages-heading">About</h1>
             <p id="about-drake">
                 Famed hip-hop artist Drake was born to a mixed-race couple in
                 Canada in 1986, and raised Jewish. He came to fame playing

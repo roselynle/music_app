@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const Lyrics = ({title}) => {
+const Lyrics = ({title, close}) => {
     const [lyrics, setLyrics] = useState(false);
     useEffect(() => {
         async function getLyrics() {
@@ -19,13 +19,11 @@ const Lyrics = ({title}) => {
         }
 
         getLyrics()
-        // const stream = setInterval(fetchFromApi, 10000)
-
-        // return () => clearInterval(stream)
     }, [])
 
     return (
       <>
+      <button className="lyrics-btn" onClick={close} style={{cursor: "pointer"}}>Close</button>
         { lyrics ?
             <>
             <p>{lyrics.lyrics}</p>

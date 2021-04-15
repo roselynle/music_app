@@ -107,18 +107,14 @@ input {
 }
 
 .pages-heading {
-    font-size: 4rem;
+    font-size: 4.5rem;
     text-align: center;
     font-family: "Staatliches", cursive;
-}
-
-.about-container {
-    padding-top: 30px;
-    margin-bottom: 80px;
+    margin-top: 40px;
 }
 
 #about-drake {
-    height: 100vh;
+    padding: 40px 40px;
 }
 
 #lyrics {
@@ -126,14 +122,15 @@ input {
 }
 
 .lyrics-row {
-    padding: 80px;
-    margin: 0px 30px;
+    padding: 50px;
+    margin: 0px 250px;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
 .lyrics-container {
     margin-top: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .homepage-container {
@@ -165,4 +162,13 @@ i {
 
 i:hover {
     color: #1d1b1b96;
+}
+
+.lyrics-btn {
+    font-size: 0.9rem;
+    margin: 20px 0px;
+    font-family: "Quicksand", sans-serif;
+    padding: 8px;
+    background-color: #3a3838;
+    color: white;
 }

@@ -37,6 +37,7 @@ const Albums = () => {
 
     return (
         <main aria-label="main" className="albums-container">
+            <h1 className="pages-heading">Albums</h1>
             <AlbumCards album={album} />
         </main>
     );
