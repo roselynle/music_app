@@ -7,7 +7,11 @@
 }
 
 body {
-    background: #3a3838;
+    background: linear-gradient(
+        to bottom,
+        #3a3838,
+        rgba(68, 65, 65, 0.65)
+    );
     background-size: 100% 100%;
     font-family: "Quicksand", sans-serif;
     margin: 0 auto;
@@ -46,37 +50,23 @@ body {
     margin: 0 auto;
 }
 
-.albumImg {
-    margin: 1rem;
-}
 
 .card {
-    border: 1px solid black;
     background-color: #ebebeb;
     border-radius: 5px;
-    width: 21rem;
     color: black;
     text-align: center;
-    padding-bottom: 15px;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
+    margin: 0px 1px;
+    padding: 8px 10px 0px 10px;
+    margin-top: 30px;
 }
 
 .row {
-    display: inline-block;
-    align-content: space-evenly;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0px 50px;
+    justify-content: space-evenly;
 }
 
 .card:hover {
-    box-shadow: 1px 2px 3px rgb(125, 121, 121);
+    box-shadow: 2px 3px 5px rgb(205, 205, 205);
     transition: all 0.2s ease-out;
     top: -4px;
   }
@@ -85,6 +75,10 @@ body {
     color: black;
     text-decoration: underline;
     padding-bottom: 5px;
+}
+
+.card-title {
+    font-size: 1.7rem;
 }
 
 
@@ -106,7 +100,7 @@ body {
 }
 
 i {
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 input {
@@ -167,8 +161,7 @@ h4 {
 
 .albums-container {
     margin-top: 30px;
-    height: 100vh;
-    width: 100vw;
+    margin-bottom: 50px;
 }
 
 i {
