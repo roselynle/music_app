@@ -14,10 +14,20 @@ A music webpage dedicated to Drake for the Team Drizzy fans. This project was cr
 
 ## Technologies
 
-## To do
+-   React, Webpack, Babel. See below for dependencies:
 
-- move lyrics to a Lyrics page
-- created nested routing for lyrics
+## Tasks
+-   [x] Set up React App using npm and Webpack
+-   [x] Install the required libraries
+-   [x] Create a minimum of two components
+-   [x] Add a 'Like' feature by implementing useState to track if it has been liked or not
+-   [x] Add a controlled form
+-   [x] Refactor file structure and use props where appropriate
+-   [x] Implement useEffect by fetching data from an API
+-   [x] Implement navigation to give the page at least 3 routes
+-   [x] Create a 'Back' button using useHistory hook
+-   [ ] Add nested routing (e.g. for lyrics page)
+-   [ ] Write tests as appropriate
 
 ## Wins & Challenges
 

@@ -147,11 +147,11 @@ input {
 
 i {
     font-size: 1.8rem;
-    margin-left: 15px;
+    margin: 0px 15px;
     margin-bottom: 20px;
     padding-top: 14px;
 }
 
 i:hover {
-    color: black;
+    color: #1d1b1b96;
 }
