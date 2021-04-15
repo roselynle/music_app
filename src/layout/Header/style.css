@@ -2,23 +2,31 @@
 
 nav {
   width: 100vw;
-  background-color: #ebebeb;
-  padding: 16px 0px;
+  background-color: #aaa3a399;
+  height: 50px;
   display: flex;
   justify-content: space-around;
   color: white;
   position: fixed;
+  top:0;
 }
 
 a {
+  transition: all 0.1s;
+  width: 100%;
+  text-align: center;
   text-decoration: none;
+  color: white;
+  padding-top: 14px;
 }
 
 a:hover {
+  background-color: #ebebeb96;
   color: black;
 }
 
 .current {
-  color: black;
+  background-color: white;
+  color: white;
   font-weight: bolder;
 }

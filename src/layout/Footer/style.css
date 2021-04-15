@@ -1,11 +1,11 @@
 #footer {
   bottom: 0;
   width: 100vw;
-  background-color: #ebebeb;
-  padding: 11px 0px;
+  background-color: #aaa3a399;
+  padding: 9px 0px;
   display: flex;
   justify-content: space-around;
-  color: black;
-  position: fixed;
+  color: white;
   font-size: 0.9rem;
+  position: fixed;
 }
