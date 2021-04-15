@@ -34,7 +34,7 @@ body {
     text-align: center;
     width: 650px;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 45px;
     font-size: 1rem;
 }
 
@@ -61,27 +61,40 @@ body {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    box-shadow: 1px 1px 3px rgb(125, 121, 121);
 }
 
 .row {
     display: inline-block;
-    align-content: space-around;
+    align-content: space-evenly;
 }
 
 .column {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 0px 50px;
 }
+
+.card:hover {
+    box-shadow: 1px 2px 3px rgb(125, 121, 121);
+    transition: all 0.2s ease-out;
+    top: -4px;
+  }
+
+  .card-link {
+    color: black;
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
+
 
 #greeting-container {
     display: flex;
     text-align: center;
     flex-direction: column;
-    padding: 10px 10px;
+    padding: 6px 15px;
     background-color: #aaa3a399;
-    width: 300px;
+    width: 330px;
     margin: 0 auto;
     border-radius: 15px;
     font-size: 0.9rem;
@@ -89,6 +102,7 @@ body {
 
 #greeting-container > h3 {
     padding-bottom: 8px;
+    font-size: 1.3rem;
 }
 
 i {
@@ -113,8 +127,12 @@ input {
     margin-top: 40px;
 }
 
-#about-drake {
-    padding: 40px 40px;
+.about-drake {
+    padding: 30px 50px;
+}
+
+h4 {
+    padding: 30px 0px 5px 0px;
 }
 
 #lyrics {
@@ -122,7 +140,7 @@ input {
 }
 
 .lyrics-row {
-    padding: 50px;
+    padding: 35px;
     margin: 0px 250px;
     background-color: rgba(255, 255, 255, 0.3);
 }

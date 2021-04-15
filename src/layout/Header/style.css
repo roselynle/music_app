@@ -23,6 +23,7 @@ a {
 a:hover {
   background-color: #ebebeb96;
   color: black;
+  text-decoration: none;
 }
 
 .current {

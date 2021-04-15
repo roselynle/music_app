@@ -4,14 +4,18 @@ const About = () => {
     return (
         <main aria-label="main" className="about-container">
             <h1 className="pages-heading">About</h1>
-            <p id="about-drake">
+            <p class="about-drake">
+            <img style={{width: "460px", float:"left", margin:"15px 20px 0px 0px"}}src="https://a9p9n2x2.stackpathcdn.com/wp-content/blogs.dir/1/files/2020/02/drake-2.jpg" />
                 Famed hip-hop artist Drake was born to a mixed-race couple in
                 Canada in 1986, and raised Jewish. He came to fame playing
                 wheelchair-bound Jimmy Brooks in seven seasons of the popular
                 teen soap Degrassi: The Next Generation. In 2006, Drake began
                 circulating mixtapes of his raps, and signed a record deal in
                 2009. His hit songs include “Every Girl,” “Best I Ever Had,”
-                “Money to Blow” and “Take Care.” Early Life Drake, the world’s
+                “Money to Blow” and “Take Care.” 
+                
+                <h4>Early Life</h4>
+                Drake, the world’s
                 only black Jewish-Canadian rap star, was born Aubrey Drake
                 Graham on October 24, 1986, in Toronto, Canada. Drake grew up
                 with music in his blood. His father, Dennis Graham, was a
@@ -34,7 +38,10 @@ const About = () => {
                 all-white high school. Drake remembers, “Nobody understood what
                 it was like to be black and Jewish.” However, he also adds,
                 “being different from everyone else just made me a lot
-                stronger.” Drake ‘Degrassi’ Star It was one of Drake’s
+                stronger.” 
+                
+                <h4>Drake ‘Degrassi’ Star</h4> 
+                It was one of Drake’s
                 classmates at Forest Hill who gave him his start in the
                 entertainment industry. “There was a kid in my class whose
                 father was an agent,” Drake would later explain, adding, “His
@@ -52,7 +59,9 @@ const About = () => {
                 cult following—”There are very few subtle Degrassi fans,” Drake
                 has said—propelling Drake to celebrity status in Canada, even
                 while he remained relatively anonymous in the United States.
-                Hip-Hop Fame While still staring on Degrassi, Drizzy began
+                
+                <h4>Hip-Hop</h4>
+                Fame While still staring on Degrassi, Drizzy began
                 attempting his transition into the world of hip-hop. He released
                 his first mixtape, Room for Improvement, in 2006, achieving
                 modest sales around approximately 6,000 copies. He followed that
@@ -78,7 +87,9 @@ const About = () => {
                 most popular singles at this time included “Every Girl,”
                 “Forever” and “Money to Blow.” By mid-2009, Drizzy had inked a
                 record deal with Lil Wayne’s Young Money Entertainment.
-                Chart-Topping Success On June 15, 2010, Drizzy released his
+                
+                <h4>Chart-Topping</h4>
+                Success On June 15, 2010, Drizzy released his
                 first full studio album, Thank Me Later, which debuted at No. 1
                 on both American and Canadian album charts and has since been
                 certified platinum. Drizzy’s new persona as the cocksure prince
@@ -94,7 +105,9 @@ const About = () => {
                 second studio album, Take Care, which included songs like
                 “Headlines,” “Make Me Proud,” “The Motto” and “Take Care.” The
                 album met with wide acclaim, winning the 2013 Grammy Award for
-                best rap album, among several other honors. Infamous Feud
+                best rap album, among several other honors. 
+                
+                <h4>Infamous Feud</h4>
                 Despite his big successes on the music charts, Drizzy has hit a
                 few rough patches in his personal life. In recent years, he and
                 fellow entertainer Chris Brown have become rivals over singer

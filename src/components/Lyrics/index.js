@@ -28,7 +28,7 @@ const Lyrics = ({title, close}) => {
             <>
             <p>{lyrics.lyrics}</p>
             </>
-        : <h2>Lyrics are on their way!</h2> }
+        : <h4>Lyrics are on their way!</h4> }
         </>
     )
 }
