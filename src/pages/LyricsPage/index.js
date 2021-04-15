@@ -1,36 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
 import { Lyrics } from "../../components";
 
 const LyricsPage = () => {
+    const [ showLyrics, setShowLyrics ] = useState(false);
+    const toggleLyrics = () => setShowLyrics(prevState => !prevState)
     const songs = [
         {
             id: 1,
-            title: "Nice For What",
-            lyrics: "nice-for-what",
+            title: "God's Plan",
+            lyrics: "gods-plan",
         },
         {
             id: 2,
-            title: "One Dance",
-            lyrics: "one-dance",
+            title: "Hold On We're Going Home",
+            lyrics: "hold-on-we're-going-home",
         },
         {
             id: 3,
-            title: "The Motto",
-            lyrics: "the-motto",
+            title: "Passionfruit",
+            lyrics: "passionfruit",
+        },
+        {
+            id: 4,
+            title: "Hotline Bling",
+            lyrics: "hotline-bling",
+        },
+        {
+            id: 5,
+            title: "Take Care",
+            lyrics: "take-care",
         },
     ];
 
-    return songs.map((s) => (
-        <div className="lyrics-container">
-            <div className="lyrics-row">
-                <h1>
-                    <b>{s.title}</b>
-                </h1>
-                <Lyrics key={s.id} title={s.lyrics} />
-                <p></p>
+    const renderLyrics = () => {
+        return songs.map(s => 
+            <div className="lyrics-container">
+                <div className="lyrics-row">
+                    <h1>
+                        <b>{s.title}</b>
+                    </h1>
+                    { showLyrics ? <Lyrics key={s.id} title={s.lyrics} close={toggleLyrics} /> : <button className="lyrics-btn" onClick={toggleLyrics}>Click for lyrics</button>}
             </div>
-        </div>
-    ));
-};
-
+            </div>
+        );
+    };
+    
+    return (
+        <>
+            <h1 className="pages-heading">Lyrics</h1>
+            { renderLyrics()}
+        </>
+    )
+    }
 export default LyricsPage;

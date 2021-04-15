@@ -7,7 +7,11 @@
 }
 
 body {
-    background: #3a3838;
+    background: linear-gradient(
+        to bottom,
+        #3a3838,
+        rgba(68, 65, 65, 0.65)
+    );
     background-size: 100% 100%;
     font-family: "Quicksand", sans-serif;
     margin: 0 auto;
@@ -34,7 +38,7 @@ body {
     text-align: center;
     width: 650px;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 45px;
     font-size: 1rem;
 }
 
@@ -46,42 +50,45 @@ body {
     margin: 0 auto;
 }
 
-.albumImg {
-    margin: 1rem;
-}
 
 .card {
-    border: 1px solid black;
     background-color: #ebebeb;
     border-radius: 5px;
-    width: 21rem;
     color: black;
     text-align: center;
-    padding-bottom: 15px;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 1px 1px 3px rgb(125, 121, 121);
+    margin: 0px 1px;
+    padding: 8px 10px 0px 10px;
+    margin-top: 30px;
 }
 
 .row {
-    display: inline-block;
-    align-content: space-around;
+    justify-content: space-evenly;
 }
 
-.column {
-    display: flex;
-    justify-content: center;
-    margin: 0px 50px;
+.card:hover {
+    box-shadow: 2px 3px 5px rgb(205, 205, 205);
+    transition: all 0.2s ease-out;
+    top: -4px;
+  }
+
+  .card-link {
+    color: black;
+    text-decoration: underline;
+    padding-bottom: 5px;
 }
+
+.card-title {
+    font-size: 1.7rem;
+}
+
 
 #greeting-container {
     display: flex;
     text-align: center;
     flex-direction: column;
-    padding: 10px 10px;
+    padding: 6px 15px;
     background-color: #aaa3a399;
-    width: 300px;
+    width: 330px;
     margin: 0 auto;
     border-radius: 15px;
     font-size: 0.9rem;
@@ -89,10 +96,11 @@ body {
 
 #greeting-container > h3 {
     padding-bottom: 8px;
+    font-size: 1.3rem;
 }
 
 i {
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 input {
@@ -107,18 +115,18 @@ input {
 }
 
 .pages-heading {
-    font-size: 4rem;
+    font-size: 4.5rem;
     text-align: center;
     font-family: "Staatliches", cursive;
+    margin-top: 40px;
 }
 
-.about-container {
-    padding-top: 30px;
-    margin-bottom: 80px;
+.about-drake {
+    padding: 30px 50px;
 }
 
-#about-drake {
-    height: 100vh;
+h4 {
+    padding: 30px 0px 5px 0px;
 }
 
 #lyrics {
@@ -126,14 +134,15 @@ input {
 }
 
 .lyrics-row {
-    padding: 80px;
-    margin: 0px 30px;
+    padding: 35px;
+    margin: 0px 250px;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
 .lyrics-container {
     margin-top: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .homepage-container {
@@ -152,8 +161,7 @@ input {
 
 .albums-container {
     margin-top: 30px;
-    height: 100vh;
-    width: 100vw;
+    margin-bottom: 50px;
 }
 
 i {
@@ -165,4 +173,13 @@ i {
 
 i:hover {
     color: #1d1b1b96;
+}
+
+.lyrics-btn {
+    font-size: 0.9rem;
+    margin: 20px 0px;
+    font-family: "Quicksand", sans-serif;
+    padding: 8px;
+    background-color: #3a3838;
+    color: white;
 }

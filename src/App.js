@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import * as Pages from './pages';
-import { Header, Footer } from './layout';
+import { Header } from './layout';
 
 import './App.css';
 
@@ -17,7 +17,6 @@ function App() {
            <Route path="/albums" component={Pages.Albums} />
            <Route component={Pages.NotFound} />
         </Switch>
-        <Footer />
      </>
     );
 }

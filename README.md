@@ -1,5 +1,7 @@
-# Music App - React
+# React - Music App
 [![Netlify Status](https://api.netlify.com/api/v1/badges/75282bfe-13f8-46e4-92d0-89636291290b/deploy-status)](https://app.netlify.com/sites/team-drizzy/deploys)
+
+![](react-page-screenshot.png)
 
 A music webpage dedicated to Drake for the Team Drizzy fans out there. This project was created by [@roselynle](https://github.com/roselynle) and [@ravil-96](https://github.com/ravil-96) as our first attempt to create a React app from scratch.
 
@@ -43,6 +45,7 @@ A music webpage dedicated to Drake for the Team Drizzy fans out there. This proj
     }
 
 ## Tasks
+
 -   [x] Set up React App using npm and Webpack
 -   [x] Install the required libraries
 -   [x] Create a minimum of two components
@@ -52,6 +55,7 @@ A music webpage dedicated to Drake for the Team Drizzy fans out there. This proj
 -   [x] Implement useEffect by fetching data from an API
 -   [x] Implement navigation to give the page at least 3 routes
 -   [x] Create a 'Back' button using useHistory hook
+-   [ ] Set an interval for something to happen
 -   [ ] Add nested routing (e.g. for lyrics page)
 -   [ ] Write tests as appropriate
 
@@ -64,3 +68,8 @@ A music webpage dedicated to Drake for the Team Drizzy fans out there. This proj
 ### Challenges
 -   Understanding how props work and the best way to utilise them in our webpage
 -   Slight difficulties with styling (e.g. isolating styling to one page)
+
+## Bugs
+
+-   Webpage is not fully responsive
+-   Clicking the button in the lyrics page opens up all the lyrics rather than one container
