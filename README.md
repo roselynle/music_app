@@ -1,6 +1,8 @@
 # React - Music App
 [![Netlify Status](https://api.netlify.com/api/v1/badges/75282bfe-13f8-46e4-92d0-89636291290b/deploy-status)](https://app.netlify.com/sites/team-drizzy/deploys)
 
+![](react-page-screenshot.png)
+
 A music webpage dedicated to Drake for the Team Drizzy fans out there. This project was created by [@roselynle](https://github.com/roselynle) and [@ravil-96](https://github.com/ravil-96) as our first attempt to create a React app from scratch.
 
 ### Installation
