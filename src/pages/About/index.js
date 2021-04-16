@@ -4,7 +4,7 @@ const About = () => {
     return (
         <main aria-label="main" className="about-container">
             <h1 className="pages-heading">About</h1>
-            <p class="about-drake">
+            <p className="about-drake">
             <img style={{width: "460px", float:"left", margin:"15px 20px 0px 0px"}}src="https://a9p9n2x2.stackpathcdn.com/wp-content/blogs.dir/1/files/2020/02/drake-2.jpg" />
                 Famed hip-hop artist Drake was born to a mixed-race couple in
                 Canada in 1986, and raised Jewish. He came to fame playing
@@ -14,7 +14,7 @@ const About = () => {
                 2009. His hit songs include “Every Girl,” “Best I Ever Had,”
                 “Money to Blow” and “Take Care.” 
                 
-                <h4>Early Life</h4>
+                <p className="subheading">Early Life</p>
                 Drake, the world’s
                 only black Jewish-Canadian rap star, was born Aubrey Drake
                 Graham on October 24, 1986, in Toronto, Canada. Drake grew up
@@ -40,7 +40,7 @@ const About = () => {
                 “being different from everyone else just made me a lot
                 stronger.” 
                 
-                <h4>Drake ‘Degrassi’ Star</h4> 
+                <p className="subheading">Drake ‘Degrassi’ Star</p> 
                 It was one of Drake’s
                 classmates at Forest Hill who gave him his start in the
                 entertainment industry. “There was a kid in my class whose
@@ -60,7 +60,7 @@ const About = () => {
                 has said—propelling Drake to celebrity status in Canada, even
                 while he remained relatively anonymous in the United States.
                 
-                <h4>Hip-Hop</h4>
+                <p className="subheading">Hip-Hop</p>
                 Fame While still staring on Degrassi, Drizzy began
                 attempting his transition into the world of hip-hop. He released
                 his first mixtape, Room for Improvement, in 2006, achieving
@@ -88,7 +88,7 @@ const About = () => {
                 “Forever” and “Money to Blow.” By mid-2009, Drizzy had inked a
                 record deal with Lil Wayne’s Young Money Entertainment.
                 
-                <h4>Chart-Topping</h4>
+                <p className="subheading">Chart-Topping</p>
                 Success On June 15, 2010, Drizzy released his
                 first full studio album, Thank Me Later, which debuted at No. 1
                 on both American and Canadian album charts and has since been
@@ -107,7 +107,7 @@ const About = () => {
                 album met with wide acclaim, winning the 2013 Grammy Award for
                 best rap album, among several other honors. 
                 
-                <h4>Infamous Feud</h4>
+                <p className="subheading">Infamous Feud</p>
                 Despite his big successes on the music charts, Drizzy has hit a
                 few rough patches in his personal life. In recent years, he and
                 fellow entertainer Chris Brown have become rivals over singer

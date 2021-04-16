@@ -34,12 +34,12 @@ const LyricsPage = () => {
 
     const renderLyrics = () => {
         return songs.map(s => 
-            <div className="lyrics-container">
+            <div key={s.id} className="lyrics-container">
                 <div className="lyrics-row">
                     <h2>
                         <b>{s.title}</b>
                     </h2>
-                    { showLyrics ? <Lyrics key={s.id} title={s.lyrics} close={toggleLyrics} /> : <button className="lyrics-btn" onClick={toggleLyrics}>Click for lyrics</button>}
+                    { showLyrics ? <Lyrics title={s.lyrics} close={toggleLyrics} /> : <button className="lyrics-btn" onClick={toggleLyrics}>Click for lyrics</button>}
             </div>
             </div>
         );

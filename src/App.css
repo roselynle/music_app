@@ -126,8 +126,9 @@ input {
     padding: 30px 50px;
 }
 
-h4 {
-    padding: 30px 0px 5px 0px;
+.subheading {
+    padding: 25px 0px 5px 0px;
+    font-size: 1.3rem;
 }
 
 .lyrics-row {

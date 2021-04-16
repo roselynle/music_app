@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Route, Switch, useHistory, useParams } from 'react-router-dom';
 import { AlbumCards } from "../../components";
 
 const Albums = () => {
@@ -10,7 +11,7 @@ const Albums = () => {
             release_date: "2018",
             cover:
                 "https://upload.wikimedia.org/wikipedia/en/9/90/Scorpion_by_Drake.jpg",
-            url: "https://www.youtube.com/watch?v=U9BwWKXjVaI"
+            url: "https://www.youtube.com/watch?v=U9BwWKXjVaI",
         },
         {
             id: 2,
@@ -59,19 +60,37 @@ const Albums = () => {
         },
     ]);
 
+    const history = useHistory();
+    const params = useParams();
+    const handleSelect = (id) => {
+        history.push(`albums/${id-1}`);
+    };
 
-    const renderAlbums = () => {
-        return album.map(a =>
-          <AlbumCards album={a} key={a.id}/>
-        );
-      }
+    const renderAlbums = album.map((album) => (
+        <AlbumCards key={album.id} album={album} handleSelect={handleSelect} />
+    ))
 
     return (
         <main aria-label="main" className="albums-container">
             <h1 className="pages-heading">Albums</h1>
-            <div className="row">
-        { renderAlbums() }
-        </div>
+            <Switch>
+                <Route
+                    exact
+                    path={"/albums"}
+                    render={() => <div className="row">{renderAlbums}</div>}
+                />
+                <Route
+                    path={"/albums/:id"}
+                    render={({ match }) => (
+                        <div className="row">
+                            <AlbumCards
+                                album={album[match.params.id]}
+                                handleSelect={() => {}}
+                            />
+                        </div>
+                    )}
+                />
+            </Switch>
         </main>
     );
 };

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { LikeButton } from "../";
 
-const AlbumCards = ({ album }) => {
+const AlbumCards = ({ album, handleSelect }) => {
     const [linkColor, setLinkColor] = useState("blue");
 
     useEffect(() => {
@@ -16,7 +16,7 @@ const AlbumCards = ({ album }) => {
 
     return (
         <div className="card col-3">
-            <img src={album.cover} className="card-img-top" alt="Album Cover" />
+            <img src={album.cover} className="card-img-top" alt="Album Cover" onClick={() => handleSelect(album.id)}/>
             <div className="card-body">
                 <h3 className="card-title">{album.name}</h3>
                 <p className="card-text">Release date: {album.release_date}</p>
