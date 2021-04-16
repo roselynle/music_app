@@ -55,7 +55,7 @@ A music webpage dedicated to Drake for the Team Drizzy fans out there. This proj
 -   [x] Implement useEffect by fetching data from an API
 -   [x] Implement navigation to give the page at least 3 routes
 -   [x] Create a 'Back' button using useHistory hook
--   [ ] Set an interval for something to happen
+-   [x] Set an interval for something to happen
 -   [ ] Add nested routing (e.g. for lyrics page)
 -   [ ] Write tests as appropriate
 
