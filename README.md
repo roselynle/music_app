@@ -71,5 +71,5 @@ A music webpage dedicated to Drake for the Team Drizzy fans out there. This proj
 
 ## Bugs
 
--   Webpage is not fully responsive
+-   Webpage is not fully responsive on mobile devices (e.g. lyrics page)
 -   Clicking the button in the lyrics page opens up all the lyrics rather than one container
