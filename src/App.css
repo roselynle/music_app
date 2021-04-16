@@ -168,7 +168,7 @@ h4 {
 .albums-container {
     margin-top: 30px;
     margin-bottom: 50px;
-    height: 100vh;
+    height: 100%;
 }
 
 i {
